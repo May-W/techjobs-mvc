@@ -22,7 +22,7 @@ public class SearchController {
         return "search";
     }
 
-    @RequestMapping(value = "/results")
+    @RequestMapping(value = "results")
     public String search(Model model, @RequestParam String searchType, @RequestParam String searchTerm) {
         model.addAttribute("columns", ListController.columnChoices);
 
