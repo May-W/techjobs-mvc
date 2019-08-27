@@ -36,14 +36,8 @@
 
     <hr />
 
-    <div>
-        <table class="job-listing" th:each ="job : ${jobs}">
-            <tr th:each="field : ${job}">
-                <td th:text="${field.key}"></td>
-                <td th:text="${field.value}"></td>
-            </tr>
-        </table>
-    </div>
+    <div th:replace="fragments :: search-table"></div>
+
 
 </div>
 
